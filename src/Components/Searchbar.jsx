@@ -17,15 +17,15 @@ const Searchbar = () => {
                 </span>
             </div>
             <div className="search w-[601px] relative">
-                <input type="text" placeholder='Search Products' className='w-full sm:py-4 sm:px-[21px] text-sm text-[#C4C4C4] font-normal'/>
+                <input type="text" placeholder='Search Products' className='w-full sm:py-4 sm:px-[21px] text-sm text-[#262626] placeholder:text-[#C4C4C4] placeholder:font-normal font-medium outline-none'/>
                 <FaSearch className='absolute top-[18px] right-[21px] text-[15px] text-[#262626] hover:cursor-pointer'/>
             </div>
             <div className="cart-login flex items-center gap-x-10 text-[#262626]">
-                <div className="user flex items-center">
+                <div className="user flex items-center hover:cursor-pointer">
                     <FaUser />
                     <IoMdArrowDropdown className='text-xl' />
                 </div>
-                <div className="cart">
+                <div className="cart hover:cursor-pointer">
                     <FaShoppingCart />
                 </div>
             </div>
