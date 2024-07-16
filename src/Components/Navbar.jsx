@@ -6,8 +6,8 @@ import Li from '../Layers/Li'
 import { TbGridDots } from "react-icons/tb";
 const Navbar = () => {
   return (
-    <div>
-        <Container className='flex sm:py-8 sm:px-40 items-center justify-between py-4 px-3'>
+    <nav>
+        <Container className='flex sm:py-8 sm:px-0 items-center justify-between py-4 px-3'>
             <div className="logo">
               <Logo src={Logo_image}/>
             </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
               <TbGridDots />
             </div>
         </Container>
-    </div>
+    </nav>
   )
 }
 
