@@ -8,7 +8,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Searchbar = () => {
   return (
-    <div className='search_bar bg-[#F5F5F3]'>
+    <section className='search_bar bg-[#F5F5F3]'>
         <Container className='flex justify-between items-center sm:py-[25px] py-12px'>
             <div className="category flex gap-[10px] items-center hover:cursor-pointer">
                 <MdOutlineShortText className='text-lg'/>
@@ -30,7 +30,7 @@ const Searchbar = () => {
                 </div>
             </div>
         </Container>
-    </div>
+    </section>
   )
 }
 
