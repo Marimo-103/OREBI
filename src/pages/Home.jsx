@@ -42,14 +42,14 @@ const Home = () => {
       {/* adds */}
       <section id="adds" className='md:py-[174px] py-8 md:px-0 px-2'>
         <Container className='flex md:gap-10 gap-3'>
-          <div className="add_1 md:w-[780px] md:h-[780px] w-[176px] h-[176px]">
+          <div className="add_1">
             <img src={add01} alt="" />
           </div>
-          <div className="flex flex-col md:gap-10 gap-3">
-            <div className="add_1 md:w-[780px] md:h-[370px] w-[176px] h-[78px]">
+          <div className="flex flex-col md:gap-10 gap-3 md:w-[50%] md:h-[50%]">
+            <div className="add_1 w-[100%] h-[50%]">
               <img src={add02} alt="" />
             </div>
-            <div className="add_1 md:w-[780px] md:h-[370px] w-[176px] h-[78px]">
+            <div className="add_1 w-[100%] h-[50%]">
               <img src={add03} alt="" />
             </div>
           </div>
