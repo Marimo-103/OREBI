@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div>
       <IntroBanner />
+      <div className="flex my-20"></div>
     </div>
   )
 }
