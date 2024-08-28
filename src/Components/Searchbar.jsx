@@ -27,622 +27,622 @@ const Searchbar = () => {
                 </span>
                 <div className={`dropdown absolute top-full translate-y-[-18px] md:left-0 left-[11px] transition-all duration-300 z-40 ${ show ? "opacity-100 visible" : "opacity-0 invisible" }`}>
                     <ul className='bg-[#262626] md:w-[263px] w-[170px] relative'>
-                        <Lib value='Accesories' className='group'>
-                            <div className='absolute top-0 left-full bg-[#FFF] px-10 pb-8 pt-7 h-[317px] hidden md:flex items-start gap-[50px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500'>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Phones</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                        <Lib value='Accesories' className='group relative md:static'>
+                            <div className='absolute md:top-0 md:left-full top-full left-0 bg-[#FFF] md:px-10 md:pb-8 md:pt-7 p-1 md:h-[317px] flex md:flex-nowrap flex-wrap items-start md:gap-[50px] gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50'>
+                                <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                    <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Phones</h3>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 1
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 2
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 3
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 4
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 5
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 6
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Phone 7
                                     </li>
                                     
                                 </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Computers</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                    <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Computers</h3>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 1
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 2
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 3
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 4
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 5
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 6
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Computer 7
                                     </li>
                                 </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Smart watches</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                    <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Smart watches</h3>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 1
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 2
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 3
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 4
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 5
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 6
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Smart watch 7
                                     </li>
                                     
                                 </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Cameras</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                    <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Cameras</h3>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 1
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 2
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 3
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 4
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 5
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 6
                                     </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                    <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
                                     Camera 7
                                     </li>
                                     
                                 </ul>
                             </div>
                         </Lib>
-                        <Lib value='Furniture' className='group'>
-                            <div className='absolute top-0 left-full bg-[#FFF] px-10 pb-8 pt-7 h-[317px] hidden md:flex items-start gap-[50px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500'>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Phones</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Computers</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 7
-                                    </li>
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Smart watches</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Cameras</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 7
-                                    </li>
-                                    
-                                </ul>
+                        <Lib value='Furniture' className='group relative md:static'>
+                            <div className='absolute md:top-0 md:left-full top-full left-0 bg-[#FFF] md:px-10 md:pb-8 md:pt-7 p-1 md:h-[317px] flex md:flex-nowrap flex-wrap items-start md:gap-[50px] gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50'>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Phones</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Computers</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 7
+                                        </li>
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Smart watches</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Cameras</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 7
+                                        </li>
+                                        
+                                    </ul>
                             </div>
                         </Lib>
-                        <Lib value='Electronics' className='group'>
-                            <div className='absolute top-0 left-full bg-[#FFF] px-10 pb-8 pt-7 h-[317px] hidden md:flex items-start gap-[50px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500'>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Phones</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Computers</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 7
-                                    </li>
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Smart watches</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Cameras</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 7
-                                    </li>
-                                    
-                                </ul>
+                        <Lib value='Electronics' className='group relative md:static'>
+                            <div className='absolute md:top-0 md:left-full top-full left-0 bg-[#FFF] md:px-10 md:pb-8 md:pt-7 p-1 md:h-[317px] flex md:flex-nowrap flex-wrap items-start md:gap-[50px] gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50'>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Phones</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Computers</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 7
+                                        </li>
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Smart watches</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Cameras</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 7
+                                        </li>
+                                        
+                                    </ul>
                             </div>
                         </Lib>
-                        <Lib value='Clothes' className='group'>
-                            <div className='absolute top-0 left-full bg-[#FFF] px-10 pb-8 pt-7 h-[317px] hidden md:flex items-start gap-[50px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500'>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Phones</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Computers</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 7
-                                    </li>
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Smart watches</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Cameras</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 7
-                                    </li>
-                                    
-                                </ul>
+                        <Lib value='Clothes' className='group relative md:static'>
+                            <div className='absolute md:top-0 md:left-full top-full left-0 bg-[#FFF] md:px-10 md:pb-8 md:pt-7 p-1 md:h-[317px] flex md:flex-nowrap flex-wrap items-start md:gap-[50px] gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50'>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Phones</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Computers</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 7
+                                        </li>
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Smart watches</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Cameras</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 7
+                                        </li>
+                                        
+                                    </ul>
                             </div>
                         </Lib>
-                        <Lib value='Bags' className='group'>
-                            <div className='absolute top-0 left-full bg-[#FFF] px-10 pb-8 pt-7 h-[317px] hidden md:flex items-start gap-[50px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500'>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Phones</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Computers</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 7
-                                    </li>
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Smart watches</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Cameras</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 7
-                                    </li>
-                                    
-                                </ul>
+                        <Lib value='Bags' className='group relative md:static'>
+                            <div className='absolute md:top-0 md:left-full top-full left-0 bg-[#FFF] md:px-10 md:pb-8 md:pt-7 p-1 md:h-[317px] flex md:flex-nowrap flex-wrap items-start md:gap-[50px] gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50'>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Phones</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Computers</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 7
+                                        </li>
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Smart watches</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Cameras</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 7
+                                        </li>
+                                        
+                                    </ul>
                             </div>
                         </Lib>
-                        <Lib value='Home Appliances' className='group'>
-                            <div className='absolute top-0 left-full bg-[#FFF] px-10 pb-8 pt-7 h-[317px] hidden md:flex items-start gap-[50px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500'>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Phones</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Phone 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Computers</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Computer 7
-                                    </li>
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Smart watches</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Smart watch 7
-                                    </li>
-                                    
-                                </ul>
-                                <ul className='whitespace-nowrap flex flex-col gap-3'>
-                                    <h3 className='text-base text-[#262626] font-bold mb-2'>Cameras</h3>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 1
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 2
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 3
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 4
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 5
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 6
-                                    </li>
-                                    <li className='text-sm text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
-                                    Camera 7
-                                    </li>
-                                    
-                                </ul>
+                        <Lib value='Home Appliances' className='group relative md:static'>
+                            <div className='absolute md:top-0 md:left-full top-full left-0 bg-[#FFF] md:px-10 md:pb-8 md:pt-7 p-1 md:h-[317px] flex md:flex-nowrap flex-wrap items-start md:gap-[50px] gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50'>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Phones</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Phone 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Computers</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Computer 7
+                                        </li>
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Smart watches</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Smart watch 7
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul className='whitespace-nowrap flex flex-col md:gap-3 gap-[6px]'>
+                                        <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-medium md:mb-2 mb-1'>Cameras</h3>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 1
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 2
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 3
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 4
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 5
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 6
+                                        </li>
+                                        <li className='md:text-sm text-xs text-[#767676] hover:text-[#262626] hover:font-bold transition-all duration-300'>
+                                        Camera 7
+                                        </li>
+                                        
+                                    </ul>
                             </div>
                         </Lib>
                     </ul>

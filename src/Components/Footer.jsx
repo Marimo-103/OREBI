@@ -9,7 +9,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div>
-      <footer className='md:py-[52px] py-6 md:px-40 px-3 bg-[#F5F5F3]'>
+      <footer className='md:py-[52px] py-6 md:px-0 px-3 bg-[#F5F5F3]'>
         <Container className='flex flex-col md:gap-y-[65px] gap-y-10'>
           <div className="top flex md:flex-row flex-col gap-x-[145px] gap-y-9 w-auto">
             <div className="left flex md:gap-x-36 md:justify-start justify-between w-full">
@@ -74,7 +74,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="right flex md:gap-x-64 md:justify-start justify-center gap-x-10 md:items-start items-center">
+            <div className="right flex md:gap-x-64 md:justify-start justify-between gap-x-10 md:items-start items-center">
               <div className="text">
                 <h3 className='md:text-base text-sm text-[#262626] md:font-bold font-semibold leading-[168.75%%] md:mb-[15px] mb-2'>
                 (052) 611-5711 <br />

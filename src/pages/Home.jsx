@@ -7,6 +7,8 @@ import { TbReload } from 'react-icons/tb'
 import add01 from '/Home Images/Ad_1.png'
 import add02 from '/Home Images/Ad_2.png'
 import add03 from '/Home Images/Ad_3.png'
+import ProductCard from '../Layers/ProductCard'
+import ProductSlider from '../Components/ProductSlider'
 
 
 const Home = () => {
@@ -39,8 +41,8 @@ const Home = () => {
       </Container>
       </section>
 
-      {/* adds */}
-      <section id="adds" className='md:py-[174px] py-8 md:px-0 px-2'>
+      {/* adds-01 */}
+      <section id="adds" className='md:pt-[174px] pt-4 md:px-0 px-2'>
         <Container className='flex md:gap-10 gap-3'>
           <div className="add_1">
             <img src={add01} alt="" />
@@ -52,6 +54,18 @@ const Home = () => {
             <div className="add_1 w-[100%] h-[50%]">
               <img src={add03} alt="" />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* products-01 */}
+      <section id="productSlider" className='md:pt-32 pt-5 md:px-0 px-2'>
+        <Container>
+          <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
+          New Arrivals
+          </h2>
+          <div id="pSlider" className='md:mt-12 mt-7 border'>
+            <ProductSlider />
           </div>
         </Container>
       </section>

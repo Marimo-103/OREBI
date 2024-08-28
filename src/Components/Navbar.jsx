@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../Layers/Container'
 import Logo from '../Layers/Logo'
 import Logo_image from '/Common Images/Logo.png'
@@ -7,7 +7,18 @@ import { TbGridDots } from "react-icons/tb";
 import { RxDotsHorizontal } from 'react-icons/rx'
 const Navbar = () => {
 
-  let [show, setShow] = useState(true)
+  let [show, setShow] = useState(false)
+  useEffect(()=>{
+    function size() {
+      if (window.innerWidth < 768) {
+        setShow(false)
+      }else{
+        setShow(true)
+      }
+    }
+    size()
+    window.addEventListener('resize', size)
+  },[])
 
   return (
     <nav>
