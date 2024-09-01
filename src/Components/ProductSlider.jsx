@@ -45,7 +45,7 @@ function ProductSlider() {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
@@ -55,7 +55,7 @@ function ProductSlider() {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            initialSlide: 1
+            initialSlide: 1,
           }
         },
         {
@@ -68,22 +68,22 @@ function ProductSlider() {
       ]
   };
   return (
-    <div className="slider-container mx-auto">
+    <div className="slider-container ">
       <Slider {...settings}>
         <div>
-            <ProductCard src={p01} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'}/>
+            <ProductCard src={p01} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
         </div>
         <div>
-            <ProductCard src={p02} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'}/>
+            <ProductCard src={p02} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
         <div>
-            <ProductCard src={p03} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'}/>
+            <ProductCard src={p03} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
         <div>
-            <ProductCard src={p04} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'}/>
+            <ProductCard src={p04} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
         <div>
-            <ProductCard src={p05} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'}/>
+            <ProductCard src={p05} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
       </Slider>
     </div>
