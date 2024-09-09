@@ -72,8 +72,10 @@ const Home = () => {
           <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
           New Arrivals
           </h2>
-          <div id="pSlider" className='md:mt-12 mt-7 border'>
-            <ProductSlider />
+        </Container>
+        <Container className='max-w-[1640px]'>
+          <div id="pSlider" className='md:mt-12 mt-7 max-w-[1640px]'>
+            <ProductSlider className='w-full'/>
           </div>
         </Container>
       </section>

@@ -8,12 +8,14 @@ import {
 } from "react-router-dom";
 import RootLayOut from './RootLayOut';
 import Home from './pages/Home';
+import Shop from './pages/Shop';
 
 // Routing setup.............................
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayOut />}>
       <Route index element={<Home />} />
+      <Route path='/products' element={<Shop />} />
     </Route>
   )
 );

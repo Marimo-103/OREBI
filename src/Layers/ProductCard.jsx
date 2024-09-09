@@ -49,10 +49,10 @@ const Overlay = ()=> {
   )
 }
 
-const ProductCard = ({src, productName, price, color, tag}) => {
+const ProductCard = ({src, productName, price, color, tag, className}) => {
   return (
-    <div className='md:w-[370px] w-[175px] group'>
-      <div className="img md:w-[370px] md:h-[370px] w-[180px] h-[180px] relative overflow-hidden">
+    <div className={`md:w-[370px] w-[175px] group ${className}`}>
+      <div className="img w-full md:h-[370px] h-[175px] relative overflow-hidden">
         <img src={src} alt="" className='w-full h-full object-contain'/>
         <Overlay />
         <button className={`md:px-8 md:py-2 py-[5px] px-5 bg-[#262626] text-[10px] md:text-sm text-white md:font-bold font-medium absolute top-2 left-2 md:top-5 md:left-6 z-40 ${ tag ? "block" : "hidden" }`}>

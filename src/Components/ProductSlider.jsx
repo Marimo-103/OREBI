@@ -1,22 +1,26 @@
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import Container from '../Layers/Container'
 import ProductCard from "../Layers/ProductCard";
 import p01 from '/Products/product-1.png'
 import p02 from '/Products/product-2.png'
 import p03 from '/Products/product-3.png'
 import p04 from '/Products/product-4.png'
 import p05 from '/Products/product-5.png'
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
-        style={{ ...style, display: "block", background: "#00000033", cursor: "pointer", width: '65px', height: '65px', borderRadius: '50%', position: 'absolute', top: "50%", transform: "translateY(-50%)", left: "0%", zIndex: "111" }}
+        className='md:w-[65px] md:h-[65px] w-[40px] h-[40px] md:top-[153px] md:left-5 top-[70px] left-1 items-center justify-center'
+        style={{ ...style, display: "flex", background: "#00000033", cursor: "pointer", borderRadius: '50%', position: 'absolute', zIndex: "111" }}
 
         onClick={onClick}
-      />
+      >
+        <FaLongArrowAltLeft className="text-white md:text-xl text-sm" />
+      </div>
     );
   }
   
@@ -24,14 +28,16 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
-        style={{ ...style, display: "block", background: "#00000033", cursor: "pointer", width: '65px', height: '65px', borderRadius: '50%', position: 'absolute', top: "50%", transform: "translateY(-50%)", right: "0%", zIndex: "111" }}
+        className='md:w-[65px] md:h-[65px] w-[40px] h-[40px] md:top-[153px] md:right-5 top-[70px] right-1 items-center justify-center'
+        style={{ ...style, display: "flex", background: "#00000033", cursor: "pointer", borderRadius: '50%', position: 'absolute', zIndex: "111" }}
         onClick={onClick}
-      />
+      >
+        <FaLongArrowAltRight className="text-white md:text-xl text-sm" />
+      </div>
     );
   }
 
-function ProductSlider() {
+function ProductSlider({className}) {
   const settings = {
     dots: false,
     nextArrow: <SampleNextArrow />,
@@ -44,10 +50,10 @@ function ProductSlider() {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -68,22 +74,22 @@ function ProductSlider() {
       ]
   };
   return (
-    <div className="slider-container ">
+    <div className={`slider-container w-full ${className}`}>
       <Slider {...settings}>
         <div>
-            <ProductCard src={p01} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
+            <ProductCard className='w-full md:w-full md:px-5 px-1' src={p01} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
         </div>
         <div>
-            <ProductCard src={p02} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
+            <ProductCard className='w-full md:w-full md:px-5 px-1' src={p02} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
         <div>
-            <ProductCard src={p03} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
+            <ProductCard className='w-full md:w-full md:px-5 px-1' src={p03} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
         <div>
-            <ProductCard src={p04} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
+            <ProductCard className='w-full md:w-full md:px-5 px-1' src={p04} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
         <div>
-            <ProductCard src={p05} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
+            <ProductCard className='w-full md:w-full md:px-5 px-1' src={p05} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'New'}/>
         </div>
       </Slider>
     </div>
