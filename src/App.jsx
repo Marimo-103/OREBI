@@ -9,6 +9,7 @@ import {
 import RootLayOut from './RootLayOut';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
+import SignUp from './pages/SignUp';
 
 // Routing setup.............................
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<RootLayOut />}>
       <Route index element={<Home />} />
       <Route path='/products' element={<Shop />} />
+      <Route path='/sign/up' element={<SignUp />} />
     </Route>
   )
 );
