@@ -658,7 +658,9 @@ const Searchbar = () => {
                     <IoMdArrowDropdown className='md:text-xl' />
                     <div className={`absolute top-full translate-y-4 right-0 bg-[#2B2B2B] md:w-[200px] w-[100px] text-center flex flex-col md:border border-[#F0F0F0] transition-all duration-300 ${ user ? "opacity-100 visible" : "opacity-0 invisible" }`}>
                         <div className='md:text-sm text-xs text-[#FFF] md:font-bold font-medium md:py-4 py-2 transition-all duration-300 hover:bg-[#FFF] hover:text-[#262626] hover:font-normal border-b border-[#2D2D2D]'>
+                        <Link to='/sign/up'>
                         My Account
+                        </Link>
                         </div>
                         <div className='md:text-sm text-xs text-[#FFF] md:font-bold font-medium md:py-4 py-2 transition-all duration-300 hover:bg-[#FFF] hover:text-[#262626] hover:font-normal'>
                         Log Out

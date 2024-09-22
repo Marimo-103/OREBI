@@ -1,63 +1,74 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
+import ProductCard from '../Layers/ProductCard';
 
-// Example items, to simulate fetching from another resources.
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 20, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 40, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 50, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 40, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ,19, 60];
 
-function Items({ currentItems }) {
-  return (
-    <>
-      {currentItems &&
-        currentItems.map((item) => (
-          <div>
-            <h3>Item #{item}</h3>
-          </div>
-        ))}
-    </>
-  );
-}
 
 const Pagination = ({itemsPerPage}) => {
-    const [itemOffset, setItemOffset] = useState(0);
+  const [itemOffset, setItemOffset] = useState(0);
+  const [items, setItems] = useState([]);
 
-  // Simulate fetching items from another resources.
-  // (This could be items from props; or items loaded in a local state
-  // from an API endpoint with useEffect and useState)
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await fetch('https://dummyjson.com/products')
+        const data = await response.json()
+        setItems(data.products)
+      } catch (error) {
+        console.error('product not found', error);
+      }
+    }
+    getData()
+  },[])
+
   const endOffset = itemOffset + itemsPerPage;
-  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
-  // Invoke when user click to request another page.
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
 
   return (
     <>
-      <div className='flex'>
         <div>
+            <div className='md:mt-[60px] mt-5 flex justify-between md:justify-normal md:gap-x-10 md:gap-y-[50px] gap-y-6 flex-wrap'>
             <Items currentItems={currentItems} />
-            <ReactPaginate
-                breakLabel="..."
-                nextLabel="next >"
-                onPageChange={handlePageClick}
-                pageRangeDisplayed={3}
-                pageCount={pageCount}
-                previousLabel="< previous"
-                renderOnZeroPageCount={null}
-            />
-            <p className='text-base text-[#767676] leading-[30px]'>
-                Products from {itemOffset+1} to {endOffset > items.length ? items.length : endOffset} of {items.length}
-            </p>
+            </div>
+            <div className='flex items-end justify-between'>
+              <ReactPaginate
+                  breakLabel="..."
+                  nextLabel="< next"
+                  onPageChange={handlePageClick}
+                  pageRangeDisplayed={4}
+                  pageCount={pageCount}
+                  previousLabel="< previous"
+                  renderOnZeroPageCount={null}
+                  pageClassName="Li border md:w-9 md:h-9 w-5 h-5 text-[#767676]"
+                  pageLinkClassName="a md:text-sm text-xs flex justify-center items-center w-full h-full"
+                  previousClassName="hidden"
+                  nextClassName="hidden"
+                  containerClassName="pagination-ul flex md:gap-[15px] gap-2 md:mt-[50px] mt-7"
+                  activeClassName="active bg-[#262626] text-white"
+              />
+              <p className='md:text-base text-xs text-[#767676] leading-[30px]'>
+                  Products from {itemOffset+1} to {endOffset > items.length ? items.length : endOffset} of {items.length}
+              </p>
+            </div>
         </div>
-        
-      </div>
+    </>
+  );
+}
+
+let Items = ({ currentItems }) => {
+  return (
+    <>
+      {currentItems &&
+        currentItems.map((item, index) => (
+          <ProductCard key={index} src={item.thumbnail} productName={item.title} price={`$${item.price}`} color={item.brand} tag={`${item.discountPercentage} %`}/>
+        ))}
     </>
   );
 }

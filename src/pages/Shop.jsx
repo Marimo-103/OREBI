@@ -41,7 +41,7 @@ const Shop = () => {
                           <p className='md:text-base text-xs text-[#767676] leading-[187.5%]'>
                           Show:
                           </p>
-                          <select onChange={manageitemsPerPage} name="" id="" className='py-1 md:px-5 px-2 border border-[#F0F0F0] md:w-[239px] bg-transparent md:text-base text-xs text-[#767676] leading-[187.5%]'>
+                          <select onChange={manageitemsPerPage} name="" id="" className='py-1 md:px-5 px-2 border border-[#F0F0F0] md:w-[139px] bg-transparent md:text-base text-xs text-[#767676] leading-[187.5%]'>
                             <option value="12" className='py-1 px-5'>12</option>
                             <option value="24" className='py-1 px-5'>24</option>
                             <option value="36" className='py-1 px-5'>36</option>
