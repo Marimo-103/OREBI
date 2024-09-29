@@ -67,7 +67,7 @@ let Items = ({ currentItems }) => {
     <>
       {currentItems &&
         currentItems.map((item, index) => (
-          <ProductCard key={index} src={item.thumbnail} productName={item.title} price={`$${item.price}`} color={item.brand} tag={`${item.discountPercentage} %`}/>
+          <ProductCard key={index} src={item.thumbnail} productName={item.title} price={item.price} color={item.brand} tag={item.discountPercentage}/>
         ))}
     </>
   );

@@ -8,15 +8,9 @@ import add01 from '/Home Images/Ad_1.png'
 import add02 from '/Home Images/Ad_2.png'
 import add03 from '/Home Images/Ad_3.png'
 import Adds_2nd from '/Home Images/Adds_2nd.png'
-import ProductCard from '../Layers/ProductCard'
-import ProductSlider from '../Components/ProductSlider'
-import p06 from '/Products/product-6.png'
-import p07 from '/Products/product-7.png'
-import p08 from '/Products/product-8.png'
-import p09 from '/Products/product-9.png'
-import p010 from '/Products/product-10.png'
-import p011 from '/Products/product-11.png'
-import p012 from '/Products/product-12.png'
+import ArivalSlider from '../Components/ArivalSlider'
+import BestSeller from '../Components/BestSeller'
+import SpecialOffer from '../Components/SpecialOffer'
 
 
 const Home = () => {
@@ -66,7 +60,7 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* products-01 */}
+      {/* New Arrivals; products-01 */}
       <section id="productSlider" className='md:pt-32 pt-5 md:px-0 px-2'>
         <Container>
           <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
@@ -75,23 +69,18 @@ const Home = () => {
         </Container>
         <Container className='max-w-[1640px]'>
           <div id="pSlider" className='md:mt-12 mt-7 max-w-[1640px]'>
-            <ProductSlider className='w-full'/>
+            <ArivalSlider className='w-full'/>
           </div>
         </Container>
       </section>
 
-      {/* products-02 */}
+      {/* Our Bestsellers; products-02 */}
       <section id="bestSeller" className='md:pt-32 pt-5 md:px-0 px-2'>
         <Container>
           <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
             Our Bestsellers
           </h2>
-          <div id="Products" className='md:mt-12 mt-7 flex justify-between md:flex-nowrap flex-wrap gap-y-8 items-center'>
-            <ProductCard src={p06} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-            <ProductCard src={p07} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-            <ProductCard src={p08} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-            <ProductCard src={p09} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-          </div>
+          <BestSeller />
         </Container>
       </section>
 
@@ -103,18 +92,13 @@ const Home = () => {
 
       </section>
       
-      {/* products-02 */}
+      {/* Special Offers; products-03 */}
       <section id="offer" className='md:py-32 py-5 md:px-0 px-2'>
         <Container>
           <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
             Special Offers
           </h2>
-          <div id="Products" className='md:mt-12 mt-7 flex justify-between md:flex-nowrap flex-wrap gap-y-8 items-center'>
-            <ProductCard src={p010} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-            <ProductCard src={p011} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-            <ProductCard src={p012} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-            <ProductCard src={p06} productName={'Basic Crew  Neck Tee'} price={'$44.00'} color={'Black'} tag={'10%'}/>
-          </div>
+          <SpecialOffer />
         </Container>
       </section>
     </div>

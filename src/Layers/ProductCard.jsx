@@ -5,13 +5,13 @@ import { TfiReload } from 'react-icons/tfi'
 const Text = ({productName, color, price})=> {
   return(
     <>
-    <div className='md:pt-6 pt-3 w-full'>
+    <div className='md:pt-6 pt-3 w-full '>
       <div className="flex justify-between items-center mb-1 md:mb-[15px]">
         <h3 className='text-xs md:text-xl text-[#262626] md:font-bold font-medium leading-[187.5%]'>
         {productName}
         </h3>
         <p className='text-xs md:text-xl text-[#767676] font-normal leading-[187.5%]'>
-        {price}
+        ${price}
         </p>
       </div>
       <p className='text-xs md:text-xl text-[#767676] font-normal leading-[187.5%]'>
@@ -52,11 +52,11 @@ const Overlay = ()=> {
 const ProductCard = ({src, productName, price, color, tag, className}) => {
   return (
     <div className={`md:w-[370px] w-[175px] group ${className}`}>
-      <div className="img w-full md:h-[370px] h-[175px] relative overflow-hidden">
+      <div className="img w-full md:h-[370px] h-[175px] relative overflow-hidden bg-[#F5F5F3]">
         <img src={src} alt="" className='w-full h-full object-contain'/>
         <Overlay />
         <button className={`md:px-8 md:py-2 py-[5px] px-5 bg-[#262626] text-[10px] md:text-sm text-white md:font-bold font-medium absolute top-2 left-2 md:top-5 md:left-6 z-40 ${ tag ? "block" : "hidden" }`}>
-          {tag}
+          - {tag}%
         </button>
       </div>
       <Text productName={productName} price={price} color={color}/>
