@@ -720,7 +720,7 @@ const Searchbar = () => {
             className="w-full md:py-4 md:px-[21px] p-2 text-sm text-[#262626] placeholder:text-[#C4C4C4] placeholder:font-normal font-medium outline-none"
           />
           <FaSearch className="absolute top-1/2 -translate-y-1/2 md:right-[21px] right-2 md:text-[15px] text-xs text-[#262626] hover:cursor-pointer" />
-          <div className="absolute top-full left-0 w-full overflow-y-auto h-[432px]">
+          <div className="absolute top-full left-0 w-full overflow-y-auto md:h-[432px] h-[241px]">
             {filterSearch && (
               <ul>
                 {filterSearch.map((item, index) => (
