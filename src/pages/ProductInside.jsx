@@ -6,8 +6,14 @@ import p02 from '/Products/product-2.png'
 import p03 from '/Products/product-10.png'
 import p04 from '/Products/product-9.png'
 import { IoMdStar } from 'react-icons/io'
+import { FaCaretDown } from 'react-icons/fa'
+import Accordion from '../Layers/Accordion'
 
 const ProductInside = () => {
+
+    let [size, setSize] = useState('S')
+    let [sizeDDM, setSizeDDM] = useState(false)
+    let [quantity, setQuantity] = useState(1)
 
     return (
         <section id="product_details" className='md:py-[124px] py-10 md:px-0 px-2'>
@@ -52,7 +58,7 @@ const ProductInside = () => {
                         </p>
                     </div>
                     <div className="line h-[1px] max-w-[780px] bg-[#F0F0F0] md:my-7 my-4"></div>
-                    <div className="flex gap-[30px] flex-col">
+                    <div className="flex md:gap-[30px] gap-6 flex-col">
                         <div id="color" className="flex items-center md:gap-14 gap-10">
                             <p className='md:text-base text-sm text-[#262626] md:font-bold font-medium leading-[143.75%]'>
                                 COLOR:
@@ -65,6 +71,48 @@ const ProductInside = () => {
                                 <div className='md:h-5 md:w-5 h-3 w-3 bg-[#15cba432] rounded-full duration-300 md:hover:w-6 md:hover:h-6'></div>
                             </div>
                         </div>
+                        <div className="size flex items-center md:gap-[76px] gap-[60px]">
+                            <p className='md:text-base text-sm text-[#262626] md:font-bold font-medium leading-[143.75%]'>
+                                SIZE:
+                            </p>
+                            <div onClick={() => setSizeDDM(!sizeDDM)} className="select flex items-center md:gap-[76px] gap-11 text-[#767676] border md:px-5 px-2 md:py-1 py-[1px] relative z-20 bg-white">
+                                <span className='md:text-base text-sm leading-[187.5%]'>
+                                    {size}
+                                </span>
+                                <FaCaretDown />
+                                <ul onClick={(e)=> setSize(e.target.innerText)} className={`absolute z-10  left-0 w-full bg-[#F5F5F3] transition-all duration-300 ${sizeDDM ? 'top-full opacity-100 visible' : 'top-[150%] opacity-0 invisible'}`}>
+                                    <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
+                                        XS
+                                    </li>
+                                    <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
+                                        S
+                                    </li>
+                                    <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
+                                        M
+                                    </li>
+                                    <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
+                                        L
+                                    </li>
+                                    <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
+                                        XL
+                                    </li>
+                                    <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
+                                        XXL
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="quantity flex items-center md:gap-[30px] gap-[22px]">
+                            <p className='md:text-base text-sm text-[#262626] md:font-bold font-medium leading-[143.75%]'>
+                                QUANTITY:
+                            </p>
+                            <div className="count grid grid-cols-3 items-center justify-center md:gap-3 gap-1 text-[#767676] border  md:py-1 py-[1px] md:text-base text-sm  leading-[187.5%]">
+                                <div onClick={() => setQuantity(() => quantity > 1 ? quantity-- : quantity)} className="plus cursor-pointer text-center md:px-[14px] px-2">-</div>
+                                <div className="plus text-center">{quantity}</div>
+                                <div onClick={() => setQuantity(() => quantity++)} className="plus cursor-pointer text-center md:px-[14px] px-2">+</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="line h-[1px] max-w-[780px] bg-[#F0F0F0] md:my-7 my-4"></div>
                     <div className="flex items-center gap-5">
@@ -75,7 +123,8 @@ const ProductInside = () => {
                             Add to Cart
                         </button>
                     </div>
-
+                    <div className="line h-[1px] max-w-[780px] bg-[#F0F0F0] md:my-7 my-4"></div>
+                    <Accordion />
                 </div>
             </Container>
         </section>
