@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Layers/Container";
 import { MdOutlineShortText } from "react-icons/md";
-import { FaUser } from "react-icons/fa";
+import { FaCartPlus, FaHeart, FaUser } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
@@ -15,7 +15,7 @@ const Searchbar = () => {
   let [user, setUser] = useState(false);
   let [cart, setCart] = useState(false);
 
-  let [search, setSearch] = useState('');
+  let [search, setSearch] = useState("");
   let [allProducts, setAllProducts] = useState([]);
   let [filterSearch, setFilterSearch] = useState([]);
 
@@ -55,9 +55,8 @@ const Searchbar = () => {
             Shop by Category
           </span>
           <div
-            className={`dropdown absolute top-full translate-y-[-18px] md:left-0 left-[11px] transition-all duration-300 z-40 ${
-              show ? "opacity-100 visible" : "opacity-0 invisible"
-            }`}
+            className={`dropdown absolute top-full translate-y-[-18px] md:left-0 left-[11px] transition-all duration-300 z-40 ${show ? "opacity-100 visible" : "opacity-0 invisible"
+              }`}
           >
             <ul className="bg-[#262626] md:w-[263px] w-[170px] relative">
               <Lib value="Accesories" className="group relative md:static">
@@ -725,15 +724,39 @@ const Searchbar = () => {
               <ul>
                 {filterSearch.map((item, index) => (
                   <li>
-                    <div className="flex items-start bg-[#F5F5F3]">
-                        <div className="image md:w-36 md:h-36 w-24 h-20 bg-[#FFF]">
-                            <img src={item.thumbnail} alt="" className="h-full w-full object-contain"/>
+                    <div className="flex items-start bg-[#F5F5F3] border border-[#ffffff]">
+                      <div className="image md:w-36 md:h-[150px] w-24 h-20 bg-[#FFF]">
+                        <img
+                          src={item.thumbnail}
+                          alt=""
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
+                      <div className="texts md:p-3 p-1">
+                        <h3 className="md:text-xl text-xs md:font-semibold font-medium ">
+                          {item.title}
+                        </h3>
+                        <p className="md:text-lg text-xs text-[#807f7f] my-1">
+                          {item.brand}
+                        </p>
+                        <p className="md:text-base text-xs text-[#807f7f] mt-auto">
+                          ${item.price}
+                        </p>
+                        <div className="md:flex hidden mt-[9px] gap-4">
+                          <div className="flex items-center border py-1 px-3 text-sm gap-2 cursor-pointer duration-300 hover:border-[#262626]">
+                            <span>
+                              Add to Wishlist
+                            </span>
+                            <FaHeart />
+                          </div>
+                          <div className="flex items-center border py-1 px-3 text-sm gap-2 cursor-pointer duration-300 hover:border-[#262626]">
+                            <span>
+                              Add to Cart
+                            </span>
+                            <FaCartPlus />
+                          </div>
                         </div>
-                        <div className="texts md:p-3 p-1">
-                            <h3 className="md:text-xl text-xs md:font-semibold font-medium ">{item.title}</h3>
-                            <p className="md:text-lg text-xs text-[#807f7f] my-1 md:my-3">{item.brand}</p>
-                            <p className="md:text-base text-xs text-[#807f7f] mt-auto">${item.price}</p>
-                        </div>
+                      </div>
                     </div>
                   </li>
                 ))}
@@ -749,9 +772,8 @@ const Searchbar = () => {
             <FaUser />
             <IoMdArrowDropdown className="md:text-xl" />
             <div
-              className={`absolute top-full translate-y-4 right-0 bg-[#2B2B2B] md:w-[200px] w-[100px] text-center flex flex-col md:border border-[#F0F0F0] transition-all duration-300 ${
-                user ? "opacity-100 visible" : "opacity-0 invisible"
-              }`}
+              className={`absolute top-full translate-y-4 right-0 bg-[#2B2B2B] md:w-[200px] w-[100px] text-center flex flex-col md:border border-[#F0F0F0] transition-all duration-300 ${user ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
             >
               <div className="md:text-sm text-xs text-[#FFF] md:font-bold font-medium md:py-4 py-2 transition-all duration-300 hover:bg-[#FFF] hover:text-[#262626] hover:font-normal border-b border-[#2D2D2D]">
                 <Link to="/sign/up">My Account</Link>
@@ -767,9 +789,8 @@ const Searchbar = () => {
           >
             <FaShoppingCart />
             <div
-              className={`absolute top-full translate-y-4 right-0 border border-[#F0F0F0] transition-all duration-300 ${
-                cart ? "opacity-100 visible" : "opacity-0 invisible"
-              }`}
+              className={`absolute top-full translate-y-4 right-0 border border-[#F0F0F0] transition-all duration-300 ${cart ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
             >
               <div className="product flex items-center md:gap-5 gap-3 bg-[#F5F5F3] md:p-5 p-3">
                 <div className="img md:w-20 w-12 md:h-20 h-12 bg-[#D8D8D8]">

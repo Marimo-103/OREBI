@@ -85,7 +85,7 @@ const Home = () => {
       </section>
 
       {/* adds-02 */}
-      <section id="adds02" className='md:pt-32 pt-5 md:px-0 px-2 cursor-pointer'>
+      <section id="adds02" className='md:pt-32 pt-9 md:px-0 px-2 cursor-pointer'>
         <Container>
           <img src={Adds_2nd} alt="" className='w-full h-full object-contain'/>
         </Container>
@@ -93,7 +93,7 @@ const Home = () => {
       </section>
       
       {/* Special Offers; products-03 */}
-      <section id="offer" className='md:py-32 py-5 md:px-0 px-2'>
+      <section id="offer" className='md:py-32 py-10 md:px-0 px-2'>
         <Container>
           <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
             Special Offers
