@@ -8,12 +8,14 @@ import p04 from '/Products/product-9.png'
 import { IoMdStar } from 'react-icons/io'
 import { FaCaretDown } from 'react-icons/fa'
 import Accordion from '../Layers/Accordion'
+import Description from '../Layers/Description'
 
 const ProductInside = () => {
 
     let [size, setSize] = useState('S')
     let [sizeDDM, setSizeDDM] = useState(false)
     let [quantity, setQuantity] = useState(1)
+
 
     return (
         <section id="product_details" className='md:py-[124px] py-10 md:px-0 px-2'>
@@ -80,7 +82,7 @@ const ProductInside = () => {
                                     {size}
                                 </span>
                                 <FaCaretDown />
-                                <ul onClick={(e)=> setSize(e.target.innerText)} className={`absolute z-10  left-0 w-full bg-[#F5F5F3] transition-all duration-300 ${sizeDDM ? 'top-full opacity-100 visible' : 'top-[150%] opacity-0 invisible'}`}>
+                                <ul onClick={(e) => setSize(e.target.innerText)} className={`absolute z-10  left-0 w-full bg-[#F5F5F3] transition-all duration-300 ${sizeDDM ? 'top-full opacity-100 visible' : 'top-[150%] opacity-0 invisible'}`}>
                                     <li className='md:text-base text-sm leading-[187.5%] text-[#767676] border-b md:px-5 px-2 md:py-1 py-[1px]'>
                                         XS
                                     </li>
@@ -125,6 +127,7 @@ const ProductInside = () => {
                     </div>
                     <div className="line h-[1px] max-w-[780px] bg-[#F0F0F0] md:my-7 my-4"></div>
                     <Accordion />
+                    <Description />
                 </div>
             </Container>
         </section>
