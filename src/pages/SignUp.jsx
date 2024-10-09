@@ -73,7 +73,7 @@ const SignUp = () => {
     let managePost = (element) => {
         let postValue = element.target.value
         setPost(postValue)
-        setCityError(false)
+        setPostError(false)
     }
 
     // Show / Hide Password
