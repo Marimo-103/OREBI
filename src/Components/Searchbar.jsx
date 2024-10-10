@@ -779,7 +779,7 @@ const Searchbar = () => {
                 <Link to="/login">My Account</Link>
               </div>
               <div className="md:text-sm text-xs text-[#FFF] md:font-bold font-medium md:py-4 py-2 transition-all duration-300 hover:bg-[#FFF] hover:text-[#262626] hover:font-normal">
-                Log Out
+                <Link to="/my/account">Log Out</Link>
               </div>
             </div>
           </div>
@@ -815,7 +815,7 @@ const Searchbar = () => {
                 </p>
                 <div className="btns flex items-center justify-center md:gap-5 gap-3">
                   <button className="md:py-4 py-2 md:px-10 px-5 border border-[#262626] md:text-sm text-xs md:font-bold font-medium text-[#FFF] bg-[#262626] transition-all duration-300 hover:text-[#262626] hover:bg-transparent">
-                    View Cart
+                    <Link to='/cart'>View Cart</Link>
                   </button>
                   <button className="md:py-4 py-2 md:px-10 px-5 border border-[#262626] md:text-sm text-xs md:font-bold font-medium text-[#FFF] bg-[#262626] transition-all duration-300 hover:text-[#262626] hover:bg-transparent">
                     Checkout

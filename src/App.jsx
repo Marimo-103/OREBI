@@ -14,6 +14,9 @@ import ProductInside from './pages/ProductInside';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
 import LogIn from './pages/LogIn';
+import MyAccount from './pages/MyAccount';
+import Error from './pages/Error';
+import Cart from './pages/Cart';
 
 // Routing setup.............................
 const router = createBrowserRouter(
@@ -21,11 +24,14 @@ const router = createBrowserRouter(
     <Route path='/' element={<RootLayOut />}>
       <Route index element={<Home />} />
       <Route path='/products' element={<Shop />} />
+      <Route path='/cart' element={<Cart />} />
+      <Route path='/my/account' element={<MyAccount />} />
       <Route path='/login' element={<LogIn />} />
       <Route path='/sign/up' element={<SignUp />} />
       <Route path='/product/details' element={<ProductInside />} />
       <Route path='/about' element={<About />} />
       <Route path='/contacts' element={<Contacts />} />
+      <Route path="*" element={<Error />}></Route>
     </Route>
   )
 );
