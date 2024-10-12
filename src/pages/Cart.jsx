@@ -3,6 +3,7 @@ import Container from '../Layers/Container'
 import BreadCrumbs from '../Layers/BreadCrumbs'
 import { FaCaretDown, FaPlus } from 'react-icons/fa'
 import p01 from '/Products/product-4.png'
+import { Link } from 'react-router-dom'
 
 
 const Cart = () => {
@@ -75,14 +76,19 @@ const Cart = () => {
                             <div className="child md:py-[33px] md:px-5 py-3 px-2">Apply coupon</div>
                             <div className="child md:py-[33px] md:px-5 py-3 px-2 ml-auto">Update cart</div>
                         </div>
-                        <h2 className='text-[#262626] text-xs md:text-[20px] md:font-bold font-medium leading-[143.75%] text-right md:mt-14 md:mb-6'>
-                        Cart totals
+                        <h2 className='text-[#262626] text-ld md:text-[20px] md:font-bold font-semibold leading-[143.75%] md:text-right md:mt-14 md:mb-6 mt-9 mb-3'>
+                            Cart totals
                         </h2>
-                        <div className="cartTotals md:w-[645px] grid grid-cols-2 grid-rows-2 gap-[1px] bg-[#F0F0F0] ml-auto p-[1px]">
-                            <div className="w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base md:font-bold font-medium leading-[143.75%] mr-[1px]">1</div>
-                            <div className="w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base md:font-bold font-medium leading-[143.75%]">1</div>
-                            <div className="w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base md:font-bold font-medium leading-[143.75%] mr-[1px]">1</div>
-                            <div className="w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base md:font-bold font-medium leading-[143.75%]">1</div>
+                        <div className="flex flex-col items-end justify-center">
+                            <div className="cartTotals md:w-[645px] w-full grid grid-cols-2 grid-rows-2 md:gap-x-[2px] gap-x-[1px] gap-y-[1px] bg-[#F0F0F0] p-[1px]">
+                                <div className="md:w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base md:font-bold font-medium leading-[143.75%]">Subtotal</div>
+                                <div className="md:w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#767676] text-sm md:text-base leading-[143.75%]">389.99 $</div>
+                                <div className="md:w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base md:font-bold font-medium leading-[143.75%]">Total</div>
+                                <div className="md:w-[322px] md:py-4 py-2 md:px-5 px-2 bg-[#FFF] text-[#262626] text-sm md:text-base leading-[143.75%]">389.99 $</div>
+                            </div>
+                            <button className='md:py-4 md:w-[200px] text-center py-[10px] w-[140px] bg-[#262626] border border-[#262626] text-white md:text-sm text-xs md:font-bold font-medium hover:bg-transparent hover:text-[#262626] duration-300 md:mt-[30px] mt-4'>
+                                <Link to='/checkout'>Proceed to Checkout</Link>
+                            </button>
                         </div>
                     </div>
                 </Container>

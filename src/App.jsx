@@ -17,6 +17,7 @@ import LogIn from './pages/LogIn';
 import MyAccount from './pages/MyAccount';
 import Error from './pages/Error';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 // Routing setup.............................
 const router = createBrowserRouter(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path='/products' element={<Shop />} />
       <Route path='/cart' element={<Cart />} />
+      <Route path='/checkout' element={<Checkout />} />
       <Route path='/my/account' element={<MyAccount />} />
       <Route path='/login' element={<LogIn />} />
       <Route path='/sign/up' element={<SignUp />} />

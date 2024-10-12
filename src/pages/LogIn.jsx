@@ -108,7 +108,7 @@ const LogIn = () => {
                 </Container>
                 <Container className='md:mt-[57px] mt-8 md:mb-[140px] mb-20'>
                     <h2 className='md:text-[39px] text-2xl text-[#262626] md:font-bold font-medium'>
-                        Returning Customer
+                    New Customer
                     </h2>
                     <p className='md:text-base text-sm text-[#767676] leading-[187.5%] max-w-[644px] md:mt-[38px] md:mb-[51px] my-9'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
